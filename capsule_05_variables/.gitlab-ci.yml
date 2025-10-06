@@ -1,0 +1,10 @@
+variables:
+  APP_ENV: production
+
+stages:
+  - test
+
+job_test:
+  stage: test
+  script:
+    - echo "Environnement = $APP_ENV"

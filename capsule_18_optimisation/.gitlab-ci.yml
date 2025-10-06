@@ -1,0 +1,14 @@
+stages:
+  - build
+  - test
+
+job_build:
+  stage: build
+  script:
+    - echo "Build terminé"
+
+job_test:
+  stage: test
+  needs: ["job_build"]
+  script:
+    - echo "Tests lancés dès que le build est fini"

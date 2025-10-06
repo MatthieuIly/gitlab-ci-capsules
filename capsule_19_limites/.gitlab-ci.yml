@@ -1,0 +1,7 @@
+# Démonstration textuelle des limites : pas de 3e niveau d'enfants.
+stages: [test]
+
+job_info:
+  stage: test
+  script:
+    - echo "Limites: 2 niveaux enfants, 1000 downstream pipelines par hiérarchie"

@@ -1,0 +1,11 @@
+include:
+  - local: .gitlab-ci-build.yml
+
+stages:
+  - build
+  - test
+
+job_test:
+  stage: test
+  script:
+    - echo "Tests du projet"

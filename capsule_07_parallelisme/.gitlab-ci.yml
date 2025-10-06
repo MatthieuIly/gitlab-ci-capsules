@@ -1,0 +1,17 @@
+stages:
+  - test
+
+php_tests:
+  stage: test
+  script:
+    - echo "Tests PHP"
+
+js_tests:
+  stage: test
+  script:
+    - echo "Tests JavaScript"
+
+api_tests:
+  stage: test
+  script:
+    - echo "Tests API"

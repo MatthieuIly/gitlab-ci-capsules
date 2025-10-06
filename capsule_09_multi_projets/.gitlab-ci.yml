@@ -1,0 +1,8 @@
+stages:
+  - deploy
+
+trigger_app:
+  stage: deploy
+  trigger:
+    project: groupe/application   # Remplace par ton namespace/projet réel
+    branch: main

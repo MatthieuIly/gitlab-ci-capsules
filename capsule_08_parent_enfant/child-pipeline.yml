@@ -1,0 +1,4 @@
+job_child:
+  stage: test
+  script:
+    - echo "Job exécuté dans le pipeline enfant"

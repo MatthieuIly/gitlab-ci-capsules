@@ -1,0 +1,13 @@
+stages:
+  - test
+  - deploy
+
+job_test:
+  stage: test
+  script:
+    - echo "Lancement des tests"
+
+job_deploy:
+  stage: deploy
+  script:
+    - echo "Déploiement terminé"

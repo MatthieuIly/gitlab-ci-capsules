@@ -1,0 +1,17 @@
+stages:
+  - deploy
+
+deploy_only:
+  stage: deploy
+  script:
+    - echo "Déploiement (only main)"
+  only:
+    - main
+
+deploy_rules:
+  stage: deploy
+  script:
+    - echo "Déploiement (rules: main OU schedule)"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'

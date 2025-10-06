@@ -1,0 +1,8 @@
+stages:
+  - test
+
+job_nightly:
+  stage: test
+  script:
+    - echo "Tests automatiques de minuit"
+# ⚠️ La planification se configure dans l'UI : CI/CD > Schedules

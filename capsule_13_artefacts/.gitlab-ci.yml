@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+
+job_build:
+  stage: build
+  script:
+    - echo "Contenu build" > build.txt
+  artifacts:
+    paths:
+      - build.txt
+
+job_test:
+  stage: test
+  script:
+    - cat build.txt

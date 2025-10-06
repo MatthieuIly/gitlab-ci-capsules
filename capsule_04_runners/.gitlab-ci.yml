@@ -1,0 +1,9 @@
+stages:
+  - build
+
+job_build:
+  stage: build
+  tags:
+    - docker
+  script:
+    - echo "Build avec Docker (runner taggé 'docker')"

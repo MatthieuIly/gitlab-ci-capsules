@@ -1,0 +1,15 @@
+stages:
+  - test
+
+job_test:
+  stage: test
+  image: node:20
+  services:
+    - postgres:15
+  variables:
+    POSTGRES_DB: testdb
+    POSTGRES_USER: user
+    POSTGRES_PASSWORD: pass
+  script:
+    - npm install
+    - npm test
